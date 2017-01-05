@@ -1,4 +1,18 @@
 @charset "UTF-8";
+
+/*
+Colors set by Theme
+$color_1: (#7b2b27) Boxing - Input, Focus, Selected
+$color_2: (#ffffff) Inner Text
+$color_3: (#7b2b27) Text
+$color_4: (#0072ef) Links
+$color_5: (#fff1d0) Background
+
+Font set by Theme
+$font_1: (Arial) Header
+$font_2: (Arial) Main
+*/
+
 /***** Base *****/
 * {
   box-sizing: border-box;
@@ -586,6 +600,7 @@ ul {
 
 /***** Footer *****/
 .footer {
+  background-color: #fafafa;
   border-top: 1px solid #ddd;
   margin-top: 60px;
   padding: 30px 0;
@@ -614,6 +629,49 @@ ul {
   color: lighten($color_3, 20%);
   display: inline-block;
   font-weight: 300;
+}
+
+.footer-item h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4c4c4c;
+}
+
+.footer-item p {
+  -webkit-margin-after: 0px;
+  -webkit-margin-before: 0px;
+}
+
+.footer-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  flex: 1 1 33%;
+}
+
+.footer-item abbr {
+  border-bottom: 0px;
+}
+
+.footer-item .social {
+  display: inline;
+  margin-left: 10px;
+}
+
+.footer-item .social-icons .social:first-child {
+  margin-left: 0px;
+}
+
+.footer-item .social i {
+  font-size: 30px;
+  line-height: 26px;
+}
+
+.footer-item .social a {
+  color: #7b2b27;
 }
 
 /***** Breadcrumbs *****/
