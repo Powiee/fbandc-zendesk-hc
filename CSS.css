@@ -640,6 +640,13 @@ ul {
   text-transform: uppercase;
   font-weight: 700;
   color: #4c4c4c;
+  -webkit-margin-after: 0em;
+}
+
+@media (min-width: 768px) {
+  .footer-item h4 {
+    -webkit-margin-after: 1em;
+  }
 }
 
 .footer-item p {
@@ -663,7 +670,13 @@ ul {
 
 .footer-item .social {
   display: inline;
-  margin-left: 10px;
+  margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+  .footer-item .social {
+    margin-left: 10px;
+  }
 }
 
 .footer-item .social-icons .social:first-child {
