@@ -416,6 +416,11 @@ ul {
 
 /***** Header *****/
 .header {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.header-inner {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
@@ -427,7 +432,7 @@ ul {
 }
 
 @media (min-width: 1160px) {
-  .header {
+  .header-inner {
     padding: 0;
     width: 90%;
   }
