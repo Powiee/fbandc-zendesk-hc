@@ -661,7 +661,15 @@ ul {
 }
 
 .footer-item {
-  flex: 1 1 33%;
+  flex: 1 1 100%;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .footer-item {
+    flex-basis: 33%;
+    margin-bottom: 0em;
+  }
 }
 
 .footer-item abbr {
